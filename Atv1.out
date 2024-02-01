@@ -1,0 +1,31 @@
+Problem:    Atv1
+Rows:       5
+Columns:    2 (2 integer, 0 binary)
+Non-zeros:  10
+Status:     INTEGER OPTIMAL
+Objective:  lucro = 9600 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 lucro                    9600                             
+     2 Disp_MP[1]                300                         300 
+     3 Disp_MP[2]                430                         540 
+     4 Disp_MP[3]                440                         440 
+     5 Disp_MP[4]                 86                         300 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x1[1]        *             80             0               
+     2 x1[2]        *            140             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

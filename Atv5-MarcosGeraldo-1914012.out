@@ -1,0 +1,60 @@
+Problem:    Atv5
+Rows:       10
+Columns:    9
+Non-zeros:  25
+Status:     UNDEFINED
+Objective:  custo = 0 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 custo        B              0                             
+     2 fluxoEqui[D1]
+                    B              0          1000             = 
+     3 fluxoEqui[D2]
+                    B              0          3000             = 
+     4 fluxoEqui[DA]
+                    B              0           500             = 
+     5 fluxoEqui[C1]
+                    B              0         -1800             = 
+     6 fluxoEqui[C2]
+                    B              0         -1500             = 
+     7 fluxoEqui[C3]
+                    B              0         -1200             = 
+     8 requisitosClientes[C1]
+                    B              0          1800               
+     9 requisitosClientes[C2]
+                    B              0          1200               
+    10 requisitosClientes[C3]
+                    B              0            -0               
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[D1,C1]     NL             0             0                       < eps
+     2 x[D2,C1]     NL             0             0                       < eps
+     3 x[DA,C1]     NL             0             0                       < eps
+     4 x[D1,C2]     NL             0             0                       < eps
+     5 x[D2,C2]     NL             0             0                       < eps
+     6 x[DA,C2]     NL             0             0                       < eps
+     7 x[D1,C3]     NL             0             0                       < eps
+     8 x[D2,C3]     NL             0             0                       < eps
+     9 x[DA,C3]     NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 3.00e+03 on row 3
+        max.rel.err = 1.00e+00 on row 3
+        PRIMAL SOLUTION IS INFEASIBLE
+
+KKT.DE: max.abs.err = 1.40e+00 on column 4
+        max.rel.err = 5.83e-01 on column 4
+        DUAL SOLUTION IS WRONG
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
